@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: "Open Sans", system-ui, sans-serif;
+    color: #344767;
+    background-color: #f8f9fa;
+    -webkit-font-smoothing: antialiased;
+  }
+  .dark body {
+    color: #ffffff;
+    background-color: #1a1f36;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .badge-primary {
+    background: rgba(203, 12, 159, 0.1);
+    color: #cb0c9f;
+  }
+  .badge-success {
+    background: rgba(130, 214, 22, 0.12);
+    color: #4d8a0a;
+  }
+  .dark .badge-success {
+    color: #98ec2d;
+  }
+  .badge-info {
+    background: rgba(23, 193, 232, 0.12);
+    color: #0c7e95;
+  }
+  .dark .badge-info {
+    color: #21d4fd;
+  }
+  .badge-warning {
+    background: rgba(251, 207, 51, 0.18);
+    color: #8a6a02;
+  }
+  .dark .badge-warning {
+    color: #fbcf33;
+  }
+  .badge-danger {
+    background: rgba(234, 6, 6, 0.1);
+    color: #ea0606;
+  }
+  .badge-dark {
+    background: rgba(52, 71, 103, 0.1);
+    color: #344767;
+  }
+  .dark .badge-dark {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: #cb0c9f;
+  }
+  .text-success {
+    color: #82d616;
+  }
+  .text-info {
+    color: #17c1e8;
+  }
+  .text-warning {
+    color: #fbcf33;
+  }
+  .text-danger {
+    color: #ea0606;
+  }
+  .text-dark {
+    color: #344767;
+  }
+  .text-body {
+    color: #67748e;
+  }
+  .text-muted {
+    color: #8392ab;
+  }
+  .dark .dark\:text-white {
+    color: #ffffff;
+  }
+  .dark .dark\:text-white\/80 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .dark .dark\:text-white\/60 {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .dark .dark\:text-white\/40 {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .dark .dark\:bg-dark-page {
+    background-color: #1a1f36;
+  }
+  .dark .dark\:bg-dark-card {
+    background-color: #202940;
+  }
+  .dark .dark\:border-dark-card {
+    border-color: #202940;
+  }
+  .dark .dark\:border-white\/10 {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .dark .dark\:border-white\/20 {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .dark .dark\:bg-white\/5 {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  .dark .dark\:bg-white\/10 {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .printable {
+    display: none;
+  }
+  @media print {
+    .printable {
+      display: block;
+    }
+    .no-print {
+      display: none !important;
+    }
+    body {
+      background: white !important;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+graphify-out/
+
+# Node / Next.js
+node_modules
+.next
+out
+dist
+.env
+.env.local
+*.log
+coverage
+
+# TypeScript
+*.tsbuildinfo
+
+# Claude local settings
+.claude/settings.local.json

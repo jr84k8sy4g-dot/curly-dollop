@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm audit *)",
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(cloudflared tunnel *)",
+      "Bash(tee /tmp/cdss-tunnel-url)"
+    ]
+  }
+}
