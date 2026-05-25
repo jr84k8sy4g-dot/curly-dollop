@@ -12,7 +12,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div
+          role="alert"
+          className="bg-amber-100 border-b border-amber-300 text-amber-900 text-xs sm:text-sm text-center px-4 py-2 font-medium"
+        >
+          <strong>Demo / educational use only.</strong> Not a medical device. Do not use for real clinical decisions.
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
